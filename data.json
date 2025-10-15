@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "source": "AstroGen sample",
+    "note": "Precomputed shadow path for Ujjain on 2025-06-21 with 1m gnomon"
+  },
+  "input": { "lat": 23.18, "lon": 75.78, "date": "2025-06-21", "time": "12:00", "gnomon": 1.0 },
+  "declination": 23.44,
+  "hours": [6.0, 6.25, 6.5, 6.75, 7.0, 9.0, 12.0, 15.0, 18.0],
+  "path": [
+    { "alt": 0.0, "az": 60.0, "shadow": 999999 },
+    { "alt": 5.0, "az": 65.0, "shadow": 11.43 },
+    { "alt": 15.0, "az": 75.0, "shadow": 3.732 },
+    { "alt": 25.0, "az": 90.0, "shadow": 2.144 },
+    { "alt": 35.0, "az": 105.0, "shadow": 1.428 },
+    { "alt": 70.0, "az": 180.0, "shadow": 0.364 },
+    { "alt": 80.0, "az": 180.0, "shadow": 0.176 },
+    { "alt": 35.0, "az": 255.0, "shadow": 1.428 },
+    { "alt": 0.0, "az": 300.0, "shadow": 999999 }
+  ]
+}

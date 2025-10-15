@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AstroGen 2.0 — Where Shadows Teach the Stars</title>
+    <meta name="description" content="AstroGen — AI-powered astronomical solutions. From Ujjain to the Cosmos — where India’s shadow geometry meets modern code." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="site-header" role="banner" aria-label="Primary">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">✦</div>
+          <span class="brand-title">AstroGen 2.0</span>
+        </div>
+        <nav class="nav" role="navigation" aria-label="Main">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Toggle navigation</span>
+            ☰
+          </button>
+          <ul id="nav-menu" class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about" >About</a></li>
+            <li><a href="#features">Solution</a></li>
+            <li><a href="#challenges">Challenges</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#simulation" class="cta-mini">Simulation</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home" class="hero" role="main" aria-label="Home">
+      <canvas id="starfield" aria-hidden="true"></canvas>
+      <div class="hero-overlay">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 class="hero-title text-balance">
+              AstroGen 2.0 — Where Shadows Teach the Stars
+            </h1>
+            <p class="hero-subtitle text-pretty">
+              From Ujjain to the Cosmos — where India’s shadow geometry meets modern code.
+              Trace the sun’s whisper across centuries. Where the cosmos and code align.
+            </p>
+            <div class="hero-ctas">
+              <a href="#simulation" class="btn btn-primary" data-ripple>Run Simulation</a>
+              <a href="#features" class="btn btn-ghost" data-ripple>Explore Features</a>
+            </div>
+
+            <div class="micro-tooltips">
+              <span class="micro" data-tooltip="Yantra-inspired geometry meets AI-assisted modeling.">What is AstroGen?</span>
+              <span class="micro" data-tooltip="We calculate solar position, shadows, and visualize across latitudes.">How it works</span>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="planet" aria-hidden="true">
+              <div class="glow"></div>
+              <div class="ring"></div>
+            </div>
+            <div class="orb-info" role="note">
+              <strong>Celestial Preview</strong>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="h-serif">About AstroGen</h2>
+          <p class="section-lead">
+            AI-powered astronomical instrumentation and visualization — a fusion of heritage yantra geometry and modern software.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <article class="card" tabindex="0">
+            <h3>Technology</h3>
+            <p data-tooltip="We compute declination, hour angles, altitude/azimuth, and shadow vectors.">
+              Fast solar geometry engine: altitude/azimuth, shadow length and direction, sunrise/sunset windows.
+            </p>
+          </article>
+
+          <article class="card" tabindex="0">
+            <h3>Feasibility</h3>
+            <p>
+              Lightweight JS + Python stack, deployable anywhere. Low-latency calculations, accessible and mobile-first UX.
+            </p>
+          </article>
+
+          <article class="card" tabindex="0">
+            <h3>Scientific Impact</h3>
+            <p>
+              Educational simulations, cultural astronomy storytelling, and instrument prototyping for future observatories.
+            </p>
+          </article>
+
+          <figure class="diagram card" aria-label="Illustrative astronomy visual">
+            <div class="diagram-canvas" role="img" aria-label="Sun path diagram placeholder"></div>
+            <figcaption>Sun path and shadow vectors across a day.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="h-serif">Solution Features</h2>
+          <p class="section-lead">Dynamic instruments, cross-disciplinary fusion, and real-world viability.</p>
+        </header>
+
+        <div class="features-grid">
+          <div class="feature-card glow-hover">
+            <h3>Dynamic Instrument Generation</h3>
+            <p>Create parametrized sundials and yantra-inspired instruments tailored to latitude and season.</p>
+          </div>
+
+          <div class="feature-card glow-hover">
+            <h3>Cross-Disciplinary Fusion</h3>
+            <p>Astronomy + software + heritage storytelling for immersive, educational experiences.</p>
+          </div>
+
+          <div class="feature-card glow-hover">
+            <h3>Benefits & Viability</h3>
+            <p>Portable, standards-aligned web app with optional backend exports to PDF and images.</p>
+          </div>
+
+          <div class="feature-card glow-hover">
+            <h3>Future Implementation</h3>
+            <p>Integrate sensor data, AR overlays, and research-grade ephemerides for precision.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenges" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="h-serif">Challenges & Mitigation</h2>
+          <p class="section-lead">Clear paths through technical complexities.</p>
+        </header>
+
+        <ul class="challenge-list">
+          <li class="challenge-item">
+            <div class="icon">⚙️</div>
+            <div>
+              <h3>Approximation Limits</h3>
+              <p>Mitigation: Pluggable ephemeris module; verify against authoritative datasets.</p>
+            </div>
+          </li>
+          <li class="challenge-item">
+            <div class="icon">📶</div>
+            <div>
+              <h3>Offline/Latency</h3>
+              <p>Mitigation: Client-side fallbacks and caching; precomputed sample datasets.</p>
+            </div>
+          </li>
+          <li class="challenge-item">
+            <div class="icon">🧭</div>
+            <div>
+              <h3>Geolocation Accuracy</h3>
+              <p>Mitigation: Allow manual overrides; show uncertainty bands.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="why-us" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="h-serif">Why Us</h2>
+          <p class="section-lead">Team expertise and unique value.</p>
+        </header>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="avatar" role="img" aria-label="Team member photo placeholder"></div>
+            <h3>RISHI SONI</h3>
+            <p>AI/ML EXPERT</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar" role="img" aria-label="Team member photo placeholder"></div>
+            <h3>NIKITA GANDHI</h3>
+            <p>AI/ML EXPERT</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar" role="img" aria-label="Team member photo placeholder"></div>
+            <h3>VINEET DUBEY</h3>
+            <p>AI AUTOMATION</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar" role="img" aria-label="Team member photo placeholder"></div>
+            <h3>ADITYA KUMAR SRIVASTAVA</h3>
+            <p>FRONTEND DEVELOPER | RESEARCHER</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar" role="img" aria-label="Team member photo placeholder"></div>
+            <h3>SUSMITA MAHATO</h3>
+            <p>UI/UX DESIGNER | FRONTEND DEVELOPER</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar" role="img" aria-label="Team member photo placeholder"></div>
+            <h3>ANSH RAJ</h3>
+            <p>BACKEND DEVELOPER</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="h-serif">Contact & Call-to-Action</h2>
+          <p class="section-lead">Get in touch for a demo, or join our newsletter.</p>
+        </header>
+
+        <div class="contact-grid">
+          <form id="contact-form" class="card" novalidate aria-labelledby="contact-title">
+            <h3 id="contact-title">Contact Form</h3>
+            <label>
+              <span class="label">Name</span>
+              <input type="text" name="name" required aria-required="true" autocomplete="name" />
+            </label>
+            <label>
+              <span class="label">Email</span>
+              <input type="email" name="email" required aria-required="true" autocomplete="email" />
+            </label>
+            <label>
+              <span class="label">Message</span>
+              <textarea name="message" rows="4" required aria-required="true"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary" data-ripple>Send</button>
+            <p class="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+
+          <form id="newsletter-form" class="card" novalidate aria-labelledby="newsletter-title">
+            <h3 id="newsletter-title">Newsletter Signup</h3>
+            <label>
+              <span class="label">Email</span>
+              <input type="email" name="email" required aria-required="true" />
+            </label>
+            <button type="submit" class="btn btn-ghost" data-ripple>Subscribe</button>
+            <p class="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="card cta-demo">
+            <h3>Request a Demo</h3>
+            <p>Experience AstroGen’s solar geometry engine.</p>
+            <a href="#simulation" class="btn btn-outline" data-ripple>Try the Simulation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="simulation" class="section section-sim">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="h-serif">Interactive Simulation</h2>
+          <p class="section-lead">Solar shadow visualization by latitude and time. Compare across cultures.</p>
+        </header>
+
+        <div class="sim-controls card">
+          <form id="sim-form" class="sim-form" aria-label="Simulation controls">
+            <div class="field">
+              <label for="lat">Latitude (°):</label>
+              <input id="lat" name="lat" type="number" step="0.01" value="23.18" aria-describedby="lat-help"/>
+              <small id="lat-help" class="help">Ujjain ~ 23.18° N</small>
+            </div>
+
+            <div class="field">
+              <label for="lon">Longitude (°):</label>
+              <input id="lon" name="lon" type="number" step="0.01" value="75.78" aria-describedby="lon-help"/>
+              <small id="lon-help" class="help">Used for hour angle approximation</small>
+            </div>
+
+            <div class="field">
+              <label for="date">Date:</label>
+              <input id="date" name="date" type="date" />
+            </div>
+
+            <div class="field">
+              <label for="time">Local Time:</label>
+              <input id="time" name="time" type="time" value="12:00" />
+            </div>
+
+            <div class="field">
+              <label for="gnomon">Gnomon Height (m):</label>
+              <input id="gnomon" name="gnomon" type="number" step="0.01" value="1" />
+            </div>
+
+            <div class="actions">
+              <button type="submit" class="btn btn-primary" data-ripple>Calculate</button>
+              <button id="compare" type="button" class="btn btn-ghost" data-ripple>Global Compare</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="sim-canvas-wrap">
+          <canvas id="sim-canvas" width="800" height="420" role="img" aria-label="Sundial shadow visualization"></canvas>
+          <div class="export-actions">
+            <button id="export-img" class="btn btn-outline" data-ripple>Export Image</button>
+            <button id="export-json" class="btn btn-outline" data-ripple>Export JSON</button>
+            <button id="export-pdf" class="btn btn-outline" data-ripple>Export PDF</button>
+          </div>
+          <p class="sim-caption">
+            Shadow length and direction for the specified moment. Day arc shows shadow tip path.
+          </p>
+        </div>
+
+        <details class="card" aria-label="Educational notes">
+          <summary>Educational & Narrative</summary>
+          <p class="text-pretty">
+            From Ujjain to the Cosmos — where India’s shadow geometry meets modern code. This simulation uses classical
+            solar geometry approximations to visualize shadow behavior, linking yantra principles to modern analysis.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> AstroGen. “AstroGen 2.0 — Where Shadows Teach the Stars.”</p>
+        <nav aria-label="Footer">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#simulation">Simulation</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
